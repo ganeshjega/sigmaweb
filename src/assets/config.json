@@ -1,0 +1,10 @@
+{
+    "socket":"http://localhost:3001",
+    "baseUrl":"http://localhost:8240/SigmaAPIServices/",
+    "javaReportApiServiceUrl":"http://115.112.185.58:8160/OrionAPIServices/",
+    "javaApiServiceUrl":"http://115.112.185.58:8160/OrionAPIServices/WorkflowManagementService/",
+    "db":"newRcmDB_v1",
+    "dmsBaseUrl":"http://115.112.185.58:3201/DMSIASERVICE/docdownload.do",
+    "activateDmsSessionAlternativeMethod":true,
+    "setDmsSessionTime":1500000
+}

@@ -1,0 +1,411 @@
+export const ConstUrls = {
+  login: "user/login",
+  getDmsSessionToken: "dms/checkDmsSession",
+  generateDmsSessionForAuditee: "dms/generateDmsSessionForAuditee",
+  adminOverview: "/admin-overview",
+  updateRcmRisk: "/forms/risk/updateOneRisk",
+  getOneControl: "/forms/control/getOneControl",
+  updateOneControl: "forms/control/updateOneControl",
+  updateOneControlforTest: "/forms/control/updateOneControlforTest",
+  getControlsAssigned: "forms/risk/controls",
+  masterRiskSource: "/riskforms/master/getMasterOfRiskSource",
+  masterRiskStatus: "/riskforms/master/getMasterOfRiskStatus",
+  riskArea: "master/riskArea",
+  riskSource: "master/riskSource",
+  riskCategory: "master/riskCategory",
+  riskDepartment: "master/riskDepartment",
+  riskProcess: "master/riskProcess",
+  riskApproch: "master/riskApproch",
+  getAreaInRisk: "forms/control/getAreaInRisk",
+  getAllRecords: "forms/risk/getAllRecords",
+  getRiskWithAssessment: "forms/risk/getRiskWithAssessment",
+  getOneRisk: "forms/risk/getOneRisk",
+  getOneControls: "forms/risk/controls",
+  updateOneAssessmentRisk: "forms/risk/updateOneAssessmentRisk",
+  getRiskCount: "/forms/risk/getRiskCount",
+  getAllControlRecords: "/forms/control/getAllControlRecords",
+  getCRMRecords: "/forms/control/getCRMRecords",
+  getAllRisksRecords: "/forms/risk/getAllRisksRecords",
+  masterControlStatus: "riskforms/master/getMasterControlStatus",
+  masterControlType: "riskforms/master/getMasterControlType",
+  getAllRecord: "/actions/getAllRecord",
+  getOneAction: "/actions/getOneAction",
+  getOneIssues: "/issues/getOneIssues",
+  getActionsIn: "issues/getActionsIn",
+  actionStatusMaster: "/actions/actionStatusMaster",
+  actionRatingMaster: "/actions/actionRatingMaster",
+  issueStatusMaster: "/issues/issueStatusMaster",
+  issueTypeMaster: "/issues/issueTypeMaster",
+  getActions: "/issues/getActions",
+  getControlsFromIssue: "/issues/getControls",
+  getIssue: "/actions/getIssue",
+  updateOneAction: "/actions/updateOneAction",
+  updateOneIssue: "/issues/updateOneIssue",
+  updateIssueWithAction: "/issues/updatesIssueAndAction",
+  masterArea: "/actions/masterArea",
+  getAllIssuesRecords: "/issue/getAllIssuesRecords",
+  getNumberofActions: "/actions/getNumberofActions",
+  getNumberofIssues: "/issue/getNumberofIssues",
+  getAllActionRecords: "/actions/getAllActionRecords",
+  getControlCount: "/forms/control/getControlCount",
+  getOneControlTesting: "/forms/controlTesting/getOneControlTesting",
+  getAllActions: "/forms/actions/getAllActions",
+  updateOneControlTesting: "/forms/controlTesting/updateOneControlTesting",
+  deleteIssueFromControlTesting:
+    "/forms/controlTesting/deleteIssueFromControlTesting",
+  masterFrequency: "master/controlFrequency",
+  // riskCount: "forms/risk/getRiskCount",
+  unassignedRisks: "/forms/risk/getAllUnassignRisks",
+
+  controlCount: "forms/control/getControlCount",
+  unassignedControls: "/forms/control/getAllUnassignControls",
+  unassignedControlCount: "/forms/control/getUnassignControlCount",
+  //..update one Assessment ---//
+  updateOneRiskAssessment: "/forms/risk/updateOneRiskAssessment",
+  getRisks: "forms/risk/getAllRisksRecords",
+  controlType: "riskforms/master/getMasterControlType",
+  getRisksAssigned: "forms/risk/getAssignedRisks",
+  saveRiskWithControl: "/forms/risk/saveRisk",
+  saveRiskWithoutControl: "forms/risk/saveRiskOnly",
+  saveControls: "/forms/risk/saveControls",
+  getOneRiskAssessment: "/forms/riskassessment/getOneRiskAssessment",
+  getAllRiskAssessment: "/forms/riskassessment/getAllRiskAssessment",
+  getAllAuditReport: "/audits/getAllAuditReport",
+  issuePriorityMaster: "/issues/issuePriorityMaster",
+  getLocationAudit: "/audits/getLocationAudit",
+  getLocationAction: "/actions/getLocationAction",
+  getAllAuditRecords: "/audits/getAllAuditRecords",
+  saveAction: "/actions/saveAction",
+  //Audit Universe and Table Data
+  getAllTableDataByRiskLevel: "auditUniverse/getAllTableDataByRiskLevel",
+  updateUniverseData: "fw/updateUniverseData",
+  getAuditUniverseTableData: "/auditUniverse/getTableData",
+  postOneAssessmentForRisk: "/forms/risk/postOneAssessmentRisk",
+  saveIssue: "/issues/saveIssue",
+  addNewControlToRisk: "forms/risk/addNewControlToRisk",
+ 
+  removeOneRiskFromControls: "/forms/risk/removeOneRiskFromControls",
+  removeOneIssueFromAction: "/actions/removeOneIssueFromAction",
+  removeActionFromIssue: "/issue/removeActionFromIssue",
+  removeIssueFromControl: "/control/removeIssuesFromControl",
+  removeOneControlFromRisks: "/forms/risk/removeOneControlFromRisks",
+  getAssessmentList: "/forms/risk/getAllRiskAssessmentList",
+  getRiskAssessmentDetails: "/forms/riskAssessment/getRiskAssessmentDetails",
+  getAssessmentDetails: "/forms/riskAssessment/getAssessmentDetails",
+  getUserList: "getAllUserList",
+  assignActionTask: "assignActionToWF",
+  getNotificationData: "getActionsForUserWF",
+  getAllAssessData: "/forms/riskassessment/getAllAssessData",
+  controlGuidance: "master/controlGuidance",
+  getAllControlTestRecords: "/forms/controlTesting/getAllControlTestRecords",
+  saveControlTest: "/forms/controlTesting/saveControlTest",
+
+  //galaxy data
+  // getGalaxyData: "/auditUniverse/getGalaxyData",
+
+  //IA Routes
+  setCurrentYearAuditValue: "/auditUniverse/setCurrentYearAuditValue",
+  //ARA Form
+  postARAForm: "/ia/postARAForm",
+  getARAForm: "ia/getARAForm",
+  updateARAForm: "/ia/updateARAForm",
+
+  //Audit Reporting
+  getActiveAudits: '/fw/getActiveAudits',
+  getLocationsForAA: '/ar/getLocation',
+  getSitesForAA: '/ar/getSites',
+  getCompletedAuditForAA: '/ar/getCompletedAudit',
+
+  //sagar fieldwork NEW urls
+  updateOverallProgress: "fw/updateOverallProgress",
+  getTeamForPbcAndFW: 'fw/getTeamForPbcAndFW',
+  getIssueDetailsForARA: "ara/getIssueDetails",
+  getOldAuditsRecord: "ara/getOldAuditDetails",
+  saveARA: "ara/saveARA",
+  getARADetails: "ara/getARADetails",
+  updateARADetails: "ara/updateARADetails",
+
+  getAllLastIds: "ia/getLastIdCollection",
+  getAudits: "fw/getAudits",
+  getAuditDetail: "fw/getAuditDetail",
+  updateFieldWorkAudit: "fw/updateAudit",
+  getAnnouncementData: "fw/getAnnouncementData",
+  getClosingMeetingData: "fw/getClosingMeetingData",
+  getOpenMeetUpData: "fw/getOpenMeetUpData",
+  getOpenMemotUpData: "fw/getOpenMemotUpData",
+  getDraftRepoData: "fw/getDraftRepoData",
+  saveAnnouncementData: "fw/saveAnnouncementData",
+  saveMemorandumData: "fw/saveMemorandumData",
+  saveOpenMeetUptData: "fw/saveOpenMeetUptData",
+  saveDraftRepoData: "fw/saveDraftRepoData",
+  saveCloseMeetData: "fw/saveCloseMeetData",
+
+  getAuditDetailForRP: "fw/getAuditDetailForRP",
+  updateLastIds: "fw/updateLastIdCollection",
+  auditCount: "fw/auditsCount",
+  getPBCDesc: "fw/getPBCDesc",
+  getFWDesc: "fw/getFWDesc",
+  savePBC: "fw/savePBC",
+  saveFW: "fw/saveFW",
+  updatePBCDetails: "fw/updatePBCDetails",
+  updateFWDetails: "fw/updateFWDetails",
+
+  getPBCDetails: "fw/getPBCDetails",
+  getFWDetails: "fw/getFWDetails",
+
+  addToCurrentYear: "fw/addToCurrentYear",
+  generateCurrentYearAudits: "fw/generateCurrentYearAudits",
+  getSubprocesses: "fw/getSubprocesses",
+  getRiskForSubprocess: "fw/getRisks",
+  //FIELD WORK DASHBOARD
+  getMasterDivision: "ia/masters/getMasterDivision",
+  getMasterDepartment: "ia/masters/getMasterDepartment",
+  getMasterLeadContact: "ia/masters/getMasterLeadContact",
+  getMasterProcess: "ia/masters/getMasterProcess",
+
+  getAuditDataForRiskAssess: "ia/getAuditDataForRiskAssess",
+  getIssueList: "ia/getIssueList",
+
+  getNoOfAuditsCurrYear: "/ia/field-work/dashboard/getNoOfAudits",
+
+  saveAuditPlanMemo: "/ia/saveAuditPlanMemo",
+  updateAuditPlanMemo: "/ia/updateAuditPlanMemo",
+
+  saveAuditOpeningMeeting: "/ia/saveAuditOpeningMeeting",
+  updateAuditOpeningMeeting: "/ia/updateAuditOpeningMeeting",
+
+  saveAuditAnnounce: "/ia/saveAuditAnnounce",
+  updateAuditAnnounce: "/ia/updateAuditAnnounce",
+
+  saveAuditFeldWork: "/ia/saveAuditFeldWork",
+
+  saveAuditDraftReport: "/ia/saveAuditDraftReport",
+  updateAuditDraftReport: "ia/updateAuditDraftReport",
+
+  saveAuditPBC: "/ia/saveAuditPBC",
+
+  saveAuditIssues: "/ia/saveAuditIssues",
+  saveAuditClosingMeeting: "/ia/saveAuditClosingMeeting",
+  getAuditData: "ia/getAuditData",
+  getOldAuditDetails: "ia/getTestAuditData",
+  saveAudit: "ia/postData",
+  updateUniverse: "ia/updateUniverse",
+  getAuditList: "ia/getAuditListFieldWork",
+  addNewAuditInUniverse: "ia/addNewAuditInUniverse",
+
+  findFieldWorks: "ia/findFieldWorks",
+  updateAudit: "ia/updateAudit",
+  updateAuditAfterNewIssue: "/ia/issues/updateIssue",
+  updateAuditAfterNewPBC: "ia/issues/updatePBC", //update pbc array in audit master
+  getSpecificNewAudit: "ia/getSpecificNewAudit",
+  getPBC: "ia/getPBC",
+  updatePBC: "ia/updatePBC", // update single PBC
+
+  updateCMIntoAuditMaster: "ia/updateCMIntoAuditMaster",
+  updateSingleCM: "ia/updateSingleCM",
+
+  getAuditMemo: "ia/getAuditMemo",
+  updateOpenMemo: "ia/updateOpenMemo",
+
+  getOpeningMeeting: "ia/getOpeningMeeting",
+  updateOpenMeet: "ia/updateOpenMeet",
+
+  getAnnouncement: "ia/getAnnouncement",
+  updateAnnouncement: "ia/updateAnnouncement",
+  deleteAIFile: "actions/deleteFile",
+  getFieldWorkData: "ia/getFieldWorkData",
+  updateFieldWork: "ia/updateFieldWork",
+
+  getCommodity: "ia/uni/getCommodity",
+  getRegion: "ia/uni/getRegion",
+  getLocation: "ia/uni/getLocation",
+  getSite: "ia/uni/getSite",
+  ////--Control workflow--////
+  getOneWF: "/forms/control/getOneWF",
+  saveControlWF: "/forms/control/saveControlWF",
+  updateOneControlWF: "/forms/control/updateOneControlWF",
+  updateOneControls: "/forms/control/updateOneControlls",
+  getAllcontrolWFlist: "/forms/control/getAllcontrolWFlist",
+  getMasterCWFrequency: "/forms/control/getMasterCWFrequency",
+  // getOpeningMeeting: "ia/getOpeningMeeting",
+  // updateOpenMeet: "ia/updateOpenMeet",
+
+  // getAnnouncement: "ia/getAnnouncement",
+  // updateAnnouncement: "ia/updateAnnouncement",
+  // updateFieldWork: "ia/updateFieldWork",
+
+  getDraftReport: "ia/getDraftReport",
+  updateDraftReport: "ia/updateDraftReport",
+
+  //Generic getLastid
+  getLastId: "/getLastId",
+  updateLastId: "updateLastId",
+  getfewAction: "/actions/getActioninArray",
+  //get All System Users
+  getAllUsers: "/user/getAllUsers",
+  deleteCTFile: "/forms/controlTesting/deleteFile",
+  getOneActionWorkflow: "/actions/getOneActionWorkflow",
+  saveActionWorkflow: "/actions/updateActionflow",
+  saveActionWF: "/actions/saveActionflow",
+  updateOneControlFromWF: "/forms/control/updateOneControlFromWF",
+  getOneRpWorkflow: "/audits/getOneRp",
+  updateResourcePlanning: "/audits/updateRP",
+  saveResourcePlanning: "/audits/saveRP",
+  getAllResourcePlanning: "/audits/getAllRP",
+  updateOneAudit: "/audits/updateOneAudit",
+  getAllInterview: "ia/getInteview",
+  updateOneInterview: "ia/updateOne",
+  getCountData: "ia/getCountData",
+  updateCountData: "ia/updateCountData",
+  saveInterview: "ia/saveInterview",
+  deleteInterview: "ia/deleteInterview",
+  getRoomByAudit: "ia/getRoomId",
+  //agile Dashboard
+  getMyARADetails: "/audits/getMyARADetails",
+  getMyAuditDetails: "/audits/getMyAuditDetails",
+  getMultipleIssues: "/issues/getMultipleIssues",
+
+  /////////DMS-Api's/////
+  generateDmsSessionForAuditor: 'dms/generateDmsSessionForAuditor',
+  DmsUpload: "dms/upload",
+  Dmsdoc: "dms/getAll",
+  DmsSearch: "dms/contentSearch",
+  DmsFileSearch: "dms/globalSearch",
+  DmsCheckFileExist: 'dms/checkFileExist',
+  DmsSaveAsDocument: 'dms/saveAsDocument',
+
+  //intry apis
+  DmsFileList: "intray/getFileDetails",
+  updateIntrayDoc: "intray/updateIntrayDoc",
+  deleteFileIntray: "/intray/deleteFileIntray",
+  getWorkpaperNumber: 'intray/getWorkpaperNumber',
+  setWorkPaperNumber: 'intray/setWorkPaperNumber',
+  setFileNameCollab: '/intray/updateFileNameInRoom',
+
+  renameFile: 'dms/renameFile',
+  deleteDocument: 'dms/deleteDocument',
+  /// Auditee API ///
+  checkAuditeeToken: 'chat/checkAuditeeToken',
+  generateAuditeeToken: 'chat/generateTokenForAuditee',
+  closeAuditeeSession: 'chat/closeAuditeeSession',
+  checkInDocument: "dms/checkInDocument",
+  checkOutDocument: "dms/checkOutDocument",
+  replaceDocuments: "dms/replaceDocuments",
+
+
+  //ENGAGEMENT PLANNING API URL
+  getCurrentYearAuditList: "enia/ep/getCurrentYearAuditList",
+  getSelectedAuditInfo: "enia/ep/getSelectedAuditInfo",
+  getProgressBarConfiguration: "enia/ep/getProgressBarConfiguration",
+  auditTeamData: "enia/ep/auditTeamData",
+  getAuditPlanningMemorandum: 'enia/ep/getMemorandumData',
+  saveAuditPlanningMemorandum: 'enia/ep/saveMemorandumData',
+  getOpeningMeetingData: 'enia/ep/getOpenMeetUpData',
+  saveOpeningMeetingData: 'enia/ep/saveOpenMeetUpData',
+  getAuditAnnouncementdData: 'enia/ep/getAnnouncementData',
+  saveAuditAnnouncementData: 'enia/ep/saveAnnouncementData',
+  getClosingMeetingFormData: 'enia/ep/getCloseMeetData',
+  saveClosingMeetingFormData: 'enia/ep/saveCloseMeetData',
+  getTeamAndTimeLine: 'enia/ep/getTeamAndTimeLine',
+  saveTeamAndTimeLine: 'enia/ep/saveTeamAndTimeLine',
+  //sprint 5 closing meeting Sagar's api
+  getIAllIssuesForClosingMeeting: 'enia/ep/getIAllIssuesForClosingMeeting',
+  getAllEmployees: 'enia/ep/getAllEmployees',
+  updateEmployeeForFinalReport: 'enia/ep/updateEmployeeForFinalReport',
+  delinkRecipientFromClosingMeeting: 'enia/ep/delinkRecipientFromClosingMeeting',
+  getAssignedEmployees: 'enia/ep/getAssignedEmployees',
+
+
+
+
+
+
+  //Audit Universe API
+  getAuditMasters: "enia/au/getAuditMasters",
+  getAuditById: "enia/au/getAudit",
+  createAudit: "enia/au/createAudit",
+  editAudit: "enia/au/editAudit",
+  deleteAudit: "enia/au/deleteAudit",
+  getTableDate: "enia/au/getTableData",
+  addAuditToCurrentYear: "enia/au/addToCurrentYear",
+  updateConfirmToggle: "enia/au/updateConfirmToggle",
+  getGalaxyData: "enia/au/getGalaxyData",
+  updateStartDate: "enia/au/updateStartDate",
+  duplicateAudit: "enia/au/duplicateAudit",
+  ///////////////// PBC API'S ////////
+  updatePbcDoc: "enia/pbc/updatePbcDoc",
+  getPbcData: "enia/pbc/getPbcData",
+  checkPBCToken: "enia/pbc/checkPBCToken",
+  updatePbcAttachment: "enia/pbc/updatePbcAttachment",
+  updatePbcPopup: "enia/pbc/updatePbcPopup",
+  pbcSendMail: "enia/pbc/generateTokenForPBC",
+  deletePbcEntry: "enia/pbc/deletePbcEntry",
+  updatePbcInfo: "enia/pbc/updatePbcInfo",
+  deletePbcAttachment: "enia/pbc/deletePbcAttachment",
+
+  getTemplateList: "enia/as/getTemplateList",
+  generateReport: "enia/as/generateReport",
+  getEniaDraftReport: "enia/as/getDraftReport",
+  updateEniaDraftReport: "enia/as/updateDraftReport",
+  checkDraftReport: "enia/as/checkDraftReport",
+  checkFinalReport: "enia/as/checkFinalReport",
+  previewFinalReport: "enia/as/previewFinalReport",
+  sendFinalReport: "enia/as/sendReportToRecipients",
+  generateFinalReport: "enia/as/generateFinalReport",
+  // AGILE AUDIT SPACE
+  getWorkStep: "enia/as/getWorkStep",
+  createWorkStep: "enia/as/createWorkStep",
+  updateWorkStep: "enia/as/updateWorkStep",
+  deleteWorkStep: "enia/as/deleteWorkStep",
+  ///////// AGILE DASHBOARD API'S ///////
+  //SAGAR API
+  applyAndOverwriteTemplates: "enia/as/applyAndOverwriteTemplates",
+  getPreparerList: "enia/as/getPreparerList",
+  getViewData: "enia/as/getViewData",
+  //////////////// Workstep Api //////////
+  getAuditsDetails: "enia/as/getAudits",
+  getTeamImages: "enia/as/getAuditsTeam",
+  deleteIssue: "enia/as/deleteIssue",
+
+  //workStep issues tab
+  getworkstepIssueList: "enia/as/getworkstepIssueList",
+  getAuditIssueList: "enia/as/getAuditIssueList",
+  updateIssueWorkSteps: "enia/as/updateIssueWorkSteps",
+  delinkIssueFromWorkStep: "enia/as/delinkIssueFromWorkStep",
+
+
+  //// Issues
+  getIaIssue: "enia/as/getIssue",
+  createIaIssue: "enia/as/createIssue",
+  updateIaIssue: "enia/as/updateIssue",
+
+  //value set Master
+  getValueSetMaster: "enia/comman/getValueSetMaster",
+
+  //dashboard-messages 
+  getMessagesList: "enia/dsh/getMessageList",
+  //sagar
+  markAsReadMessage: "enia/dsh/markAsReadMessage",
+
+  //////////////// Enrico New Api's ///////////
+  getRiskList: "enrico/rcm/risks/getRiskList",
+  getRiskDetails: "enrico/rcm/risks/getRisk",
+  updateRiskDetails: "enrico/rcm/risks/updateRisk",
+  createRisk: "enrico/rcm/risks/createRisk",
+  riskCount: "enrico/rcm/risks/getNumberofRisk",
+  getControls:"enrico/rcm/controls/getControlList",
+  addControlToRisk : 'enrico/rcm/risks/addControl',
+  removeControlFromRisk : 'enrico/rcm/risks/removeControl',
+  getNumberofControl:'enrico/rcm/controls/getNumberofControl',
+  getControlDetails:'enrico/rcm/controls/getControl',
+  createControl:'enrico/rcm/controls/createControl',
+  updateControl:'enrico/rcm/controls/updateControl',
+  deleteRisk: "enrico/rcm/risks/deleteRisk",
+  deleteControl: "enrico/rcm/controls/deleteControl",
+  getControlList: "enrico/rcm/cew/getControlList",
+  getRcmList:"enrico/rcm/matrix/getRcmList",
+  addRiskToControl :"enrico/rcm/controls/addRisksToControl",
+  removeRiskFromControl : "enrico/rcm/controls/removeRisksFromControl",
+  getCewDashboard: "enrico/rcm/cew/getDashboard",
+  getRcmDashboard: "enrico/rcm/matrix/getDashboardData"
+};

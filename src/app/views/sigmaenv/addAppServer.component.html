@@ -1,0 +1,72 @@
+<div class="animated fadeIn">
+  <div class="row">
+    <div class="col-sm-8">
+      <div class="card">
+        <div class="card-header">
+          Add Database Definition
+        </div>
+        <div class="card-body">
+            <div class="form-group">
+              <div class="input-group">
+                <div class="input-group-prepend">
+                  <span class="input-group-text">DataSource Name</span>
+                </div>
+                <input type="text" id="dataSourceName" [(ngModel)]="dataSourceName" class="form-control">
+                <!-- <div class="input-group-append">
+                  <span class="input-group-text"><i class="fa fa-user"></i></span>
+                </div> -->
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="input-group">
+                <div class="input-group-prepend">
+                  <span class="input-group-text">Driver Class</span>
+                </div>
+                <input type="text" id="driverClassName" [(ngModel)]="driverClassName" class="form-control">
+                <!-- <div class="input-group-append">
+                  <span class="input-group-text"><i class="fa fa-user"></i></span>
+                </div> -->
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="input-group">
+                <div class="input-group-prepend">
+                  <span class="input-group-text">Database URL</span>
+                </div>
+                <input type="text" id="databaseUrl" [(ngModel)]="databaseUrl" class="form-control">
+                <!-- <div class="input-group-append">
+                  <span class="input-group-text"><i class="fa fa-envelope"></i></span>
+                </div> -->
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="input-group">
+                <div class="input-group-prepend">
+                  <span class="input-group-text">UserName</span>
+                </div>
+                <input type="text" id="userName" [(ngModel)]="userName" class="form-control">
+                <!-- <div class="input-group-append">
+                  <span class="input-group-text"><i class="fa fa-envelope"></i></span>
+                </div> -->
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="input-group">
+                <div class="input-group-prepend">
+                  <span class="input-group-text">Password</span>
+                </div>
+                <input type="password" id="password" [(ngModel)]="password" class="form-control" autocomplete="current-password">
+                <div class="input-group-append">
+                  <span class="input-group-text"><i class="fa fa-asterisk"></i></span>
+                </div>
+              </div>
+            </div>
+            <div class="form-group form-actions">
+              <input type="button" id="testButton" class="btn btn-primary" value="TestDatabaseDefinition" (click)="testDatabaseDefinition()">
+              <input type="button" id="saveButton" class="btn btn-primary" value="SaveDatabaseDefinition" (click)="saveDatabaseDefinition()">
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
