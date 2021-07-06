@@ -27,7 +27,11 @@ export class AddAppServerComponent {
     // console.log(event);
   }
 
-  async saveAppServerfinition() {
+  testAppServerDefinition() {
+    console.log("test success");
+  }
+
+  async saveAppServerDefinition() {
     let x:any = {};
     x["datasource-name"] = this.dataSourceName;
     x["database.driverName"] = this.driverClassName;

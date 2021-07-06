@@ -27,6 +27,10 @@ export class AddDatabaseComponent {
     // console.log(event);
   }
 
+  testDatabaseDefinition() {
+    console.log("test success");
+  }
+
   async saveDatabaseDefinition() {
     let x:any = {};
     x["datasource-name"] = this.dataSourceName;
